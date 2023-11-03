@@ -15,3 +15,25 @@
   text-align: center;
   max-width: 600px;
 }
+
+.card__image {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+.numbers {
+  font-family: $ff-base;
+  font-size: size(96);
+  font-weight: $fw-700;
+  color: clr(neutral, 700);
+  line-height: 144px;
+  text-align: left;
+
+  &__line {
+    font-size: size(24);
+    font-weight: $fw-400;
+    line-height: 36px;
+    text-align: center;
+    color: clr(neutral, 500);
+  }
+}
