@@ -1,3 +1,9 @@
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1rem);
+// .flow > *:where(:not(:first-child)) {
+//   margin-top: var(--flow-spacer, 1rem);
+// }
+
+@use "../abstracts" as *;
+
+.flow {
+  margin-block-start: var(--flow-spacer, $flow-spacer);
 }

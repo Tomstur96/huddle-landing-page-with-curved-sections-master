@@ -4,6 +4,10 @@ body {
   font-family: $ff-base;
   font-weight: $fw-400;
   font-size: fs(400);
-  color: clr(neutral, 400);
+  color: clr(neutral, 900);
   line-height: 1.5;
+  min-width: 320px;
+  min-height: 100vh;
+  width: min(90rem, 100% - 5rem);
+  margin-inline: auto;
 }
