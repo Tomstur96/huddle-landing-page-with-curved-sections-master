@@ -1,10 +1,20 @@
 @use "../abstracts" as *;
 
-.heading__1 {
-  font-family: $ff-accent;
-  font-weight: $fw-700;
-  font-size: size(48);
-  line-height: 72px;
+.heading {
+  &__1 {
+    font-family: $ff-accent;
+    font-weight: $fw-700;
+    font-size: size(48);
+    line-height: 72px;
+  }
+
+  &__2 {
+    font-family: $ff-accent;
+    font-weight: $fw-700;
+    font-size: size(40);
+    line-height: 60px;
+    text-align: start;
+  }
 }
 
 .para {
@@ -14,11 +24,22 @@
   line-height: 30px;
   text-align: center;
   max-width: 600px;
+
+  &__1 {
+    font-size: size(16);
+    line-height: 24px;
+    text-align: left;
+    max-width: 520px;
+  }
 }
 
 .card__image {
   margin-inline-start: 0;
   margin-inline-end: auto;
+
+  &--container {
+    max-width: 560px;
+  }
 }
 
 .numbers {
@@ -35,5 +56,11 @@
     line-height: 36px;
     text-align: center;
     color: clr(neutral, 500);
+  }
+}
+
+.wrapper {
+  &__1 {
+    gap: size(100);
   }
 }
