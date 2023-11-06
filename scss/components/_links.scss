@@ -40,4 +40,17 @@
       background-color: clr(primary, 100);
     }
   }
+
+  &__phone {
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0em;
+    border: 0;
+    font-family: $ff-base;
+    font-size: size(16);
+    font-weight: $fw-400;
+    color: clr(neutral, 100);
+  }
 }

@@ -31,6 +31,13 @@
     text-align: left;
     max-width: 520px;
   }
+
+  &_2 {
+    font-size: size(14);
+    font-weight: $fw-500;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .card__image {
@@ -65,5 +72,15 @@
   }
   &__2 {
     gap: size(133);
+  }
+}
+
+.footer {
+  gap: size(340);
+  align-items: center;
+
+  &__container {
+    max-width: 340px;
+    gap: size(24);
   }
 }
