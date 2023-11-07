@@ -15,6 +15,15 @@
     line-height: 60px;
     text-align: start;
   }
+
+  &__3 {
+    font-family: $ff-base;
+    font-weight: $fw-700;
+    font-size: size(24);
+    line-height: size(36);
+    text-align: left;
+    color: clr(neutral, 100);
+  }
 }
 
 .para {
@@ -32,11 +41,22 @@
     max-width: 520px;
   }
 
-  &_2 {
+  &__2 {
     font-size: size(14);
     font-weight: $fw-500;
     line-height: 24px;
     text-align: left;
+    color: clr(neutral, 100);
+  }
+
+  &__3 {
+    font-size: size(14);
+    font-weight: $fw-500;
+    line-height: 24px;
+    text-align: left;
+    color: clr(neutral, 100);
+    max-width: 344px;
+    text-wrap: pretty;
   }
 }
 
@@ -77,10 +97,33 @@
 
 .footer {
   gap: size(340);
+  // gap: min(size(340), 29.8%);
   align-items: center;
 
   &__container {
     max-width: 340px;
     gap: size(24);
+
+    &--2 {
+      max-width: 560px;
+    }
   }
+}
+
+.form {
+  gap: size(40);
+
+  & input[type="email"] {
+    min-width: min(320px, 100% - 1rem);
+    border-radius: 6px;
+    padding-inline-start: 5px;
+    font-family: $ff-base;
+    font-weight: $fw-500;
+    background: clr(neutral, 100);
+    color: clr(neutral, 900);
+  }
+}
+
+.wave {
+  width: 100%;
 }
