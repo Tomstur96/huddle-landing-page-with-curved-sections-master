@@ -3,4 +3,14 @@
 .navbar {
   width: min(90rem, 100% - 5rem);
   margin-inline: auto;
+
+  @include mq(small, $type: max) {
+    width: 100%;
+  }
+}
+
+.logo {
+  @include mq(small, $type: max) {
+    max-width: 30vw;
+  }
 }
